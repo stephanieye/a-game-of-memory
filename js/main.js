@@ -1,24 +1,44 @@
 var cards = [
 {
-rank: "queen",
+rank: "redqueen",
 suit: "hearts",
-cardImage: "images/queen-of-hearts.png"
+cardImage: "cardimages/queen_of_hearts.png"
 },
 {
-rank: "queen",
+rank: "redqueen",
 suit: "diamonds",
-cardImage: "images/queen-of-diamonds.png"
+cardImage: "cardimages/queen_of_diamonds.png"
 },
 {
-rank: "king",
+rank: "blackking",
+suit: "spades",
+cardImage: "cardimages/king_of_spades.png"
+},
+{
+rank: "redking",
+suit: "diamonds",
+cardImage: "cardimages/king_of_diamonds.png"
+},
+{
+rank: "blackqueen",
+suit: "spades",
+cardImage: "cardimages/queen_of_spades.png"
+},
+{
+rank: "redking",
 suit: "hearts",
-cardImage: "images/king-of-hearts.png"
+cardImage: "cardimages/king_of_hearts.png"
 },
 {
-rank: "king",
-suit: "diamonds",
-cardImage: "images/king-of-diamonds.png"
-}
+rank: "blackqueen",
+suit: "clubs",
+cardImage: "cardimages/queen_of_clubs.png"
+},
+{
+rank: "blackking",
+suit: "clubs",
+cardImage: "cardimages/king_of_clubs.png"
+},
 ];
 
 var cardsInPlay = [];
@@ -53,7 +73,7 @@ if (cardsInPlay.length === 2) {
 var createBoard = function() {
 for (var i = 0; i < cards.length; i++) {
 	var cardElement = document.createElement('img');
-	cardElement.setAttribute('src', 'images/back.png');
+	cardElement.setAttribute('src', 'cardimages/back.png');
 	cardElement.setAttribute('data-id', i);
 	cardElement.addEventListener('click', flipCard)
 	document.getElementById('game-board').appendChild(cardElement);

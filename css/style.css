@@ -4,7 +4,7 @@ margin: 0;
 }
 
 header {
-	background-color: #F15B31;
+	background-color: #FF0000;
 	color: #FFFFFF;
 	padding: 30px 20px;
 }
@@ -20,7 +20,7 @@ margin: 0;
 
 h2 {
 font-family: Raleway;
-color: #0D2C40;
+color: #000000;
 letter-spacing: 1px;
 font-weight: 600;
 font-size: 20px;	
@@ -50,7 +50,7 @@ font-size: 18px;
 }
 
 nav {
-background-color: #00A6B3;
+background-color: #000000;
 color: #FFFFFF;
 padding: 20px 0;	
 }
@@ -61,13 +61,17 @@ margin: 35px auto;
 }
 
 img {
-margin: 40px 8px 0 8px;	
+width: 150px;
+height: 220px;
+border: 2px solid black;
+border-radius: 5px;
+margin: 6px 9px;	
 }
 
 footer {
 text-transform: uppercase;
 padding: 0 20px;
-background-color: #0D2C40;
+background-color: #000000;
 color: white;
 font-size: 14px;
 letter-spacing: .08em;
@@ -75,7 +79,7 @@ font-weight: 500;
 }
 
 button {
-    background-color: #F15B31;
+    background-color: #FF0000;
     border-radius: 25px;
     color: #FFFFFF;
     padding: 10px 16px;
@@ -86,7 +90,7 @@ button {
 }
 
 .yaymsg {
-    display: none;
+    display: none
 }
 
 .naymsg {
@@ -94,7 +98,8 @@ button {
 }
 
 .showmsg {
-    color: #F15B31;
+    color: #FF0000;
+    font-weight: 500;
     display: block;
 }
 
@@ -118,6 +123,6 @@ font-size: 0;
 }
 
 .name {
-color: #F15B31;
+color: #FF0000;
 font-weight: 700;
 }

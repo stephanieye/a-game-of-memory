@@ -25,9 +25,9 @@ var cardsInPlay = [];
 
 var checkForMatch = function() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-alert("You found a match!");
+document.querySelector('.yaymsg').className = 'showmsg';
 } else {
-alert("Sorry, try again.");
+document.querySelector('.naymsg').className = 'showmsg';
 }
 };
 
@@ -41,7 +41,9 @@ cardsInPlay.push(cards[cardID].rank);
 console.log(cards[cardID].cardImage);
 console.log(cards[cardID].suit);
 
-this.setAttribute('src', cards[cardID].cardImage);
+if (cardsInPlay.length <= 2) {
+	this.setAttribute('src', cards[cardID].cardImage);
+}
 
 if (cardsInPlay.length === 2) {
 	checkForMatch();
@@ -59,3 +61,10 @@ for (var i = 0; i < cards.length; i++) {
 };
 
 createBoard();
+
+var resetButton = document.getElementById('resetButton');
+resetButton.onclick = reloadPage;
+
+function reloadPage(){
+   window.location.reload();
+}

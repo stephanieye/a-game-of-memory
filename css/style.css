@@ -4,8 +4,8 @@ margin: 0;
 }
 
 header {
-	background-color: #FF0000;
-	color: #FFFFFF;
+	background-color: rgba(255,0,0,1);
+	color: rgba(255,255,255,1);
 	padding: 30px 20px;
 }
 
@@ -18,15 +18,6 @@ text-transform: uppercase;
 margin: 0;
 }
 
-h2 {
-font-family: Raleway;
-color: #000000;
-letter-spacing: 1px;
-font-weight: 600;
-font-size: 20px;	
-text-transform: uppercase;
-}
-
 a {
 color: inherit;
 text-decoration: none;
@@ -34,7 +25,7 @@ border-bottom: 2px solid transparent;
 }
 
 a:hover {
-border-color: white;
+border-color: rgba(255,255,255,1);
 }
 
 p {
@@ -44,8 +35,8 @@ font-size: 18px;
 }
 
 nav {
-background-color: #000000;
-color: #FFFFFF;
+background-color: rgba(0,0,0,1);
+color: rgba(255,255,255,1);
 padding: 20px 0;
 text-align: left;	
 }
@@ -70,17 +61,17 @@ border: 2px solid red;
 footer {
 text-transform: uppercase;
 padding: 0 20px;
-background-color: #000000;
-color: white;
+background-color: rgba(0,0,0,1);
+color: rgba(255,255,255,1);
 font-size: 14px;
 letter-spacing: .08em;
 font-weight: 500;
 }
 
 button {
-    background-color: #FF0000;
+    background-color: rgba(255,0,0,1);
     border-radius: 25px;
-    color: #FFFFFF;
+    color: rgba(255,255,255,1);
     padding: 10px 16px;
     text-align: center;
     text-decoration: none;
@@ -90,7 +81,7 @@ button {
 
 .instructions {
     font-family: Raleway;
-    color: #FFFFFF;
+    color: rgba(255,255,255,1);
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 18px;
@@ -119,15 +110,14 @@ button {
     display: block;
 }
 
-
 .yaymsg2, .yaymsg4, .yaymsg6, .yaymsg8, .naymsg {
     display: none
 }
 
 
 .showmsg {
-    color: #FF0000;
-    font-weight: 500;
+    color: rgba(255,0,0,1);
+    font-weight: 800;
     display: block;
 }
 
@@ -152,7 +142,7 @@ font-size: 0;
 }
 
 .name {
-color: #FF0000;
+color: rgba(255,0,0,1);
 font-weight: 700;
 }
 

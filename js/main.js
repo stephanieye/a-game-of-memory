@@ -52,9 +52,7 @@ cardImage: "cardimages/king_of_clubs.png"
 ];
 
 var cardsInPlay = [];
-
 var cardsRight = [];
-
 var cardsWrong = [];
 
 var checkForMatch = function() {
@@ -70,19 +68,14 @@ var checkForMatch = function() {
 };
 
 var flipCard = function() {
-
 var cardID = this.getAttribute('data-id');
 console.log("User flipped " + cards[cardID].rank);
-
 cardsInPlay.unshift(cards[cardID].rank);
-
 console.log(cards[cardID].cardImage);
 console.log(cards[cardID].suit);
-
 if (cardsWrong.length < 2) {
 	this.setAttribute('src', cards[cardID].cardImage);
 } 
-
 if (cardsInPlay.length % 2 === 0) {
 	checkForMatch();
 	}
@@ -99,7 +92,6 @@ for (var i = 0; i < cards.length; i++) {
 };
 
 createBoard();
-
 
 var resetButton = document.getElementById('resetButton');
 resetButton.onclick = reloadPage;

@@ -1,3 +1,38 @@
+var confettiPlayers = [];
+
+function makeItConfetti() {
+  var confetti = document.querySelectorAll('.confetti');
+  
+  if (!confetti[0].animate) {
+    return false;
+  }
+
+  for (var i = 0, len = confetti.length; i < len; ++i) {
+    var snowball = confetti[i];
+    snowball.innerHTML = '<div class="rotate"><div class="askew"></div></div>';
+    var scale = Math.random() * .8 + .2;
+    var player = snowball.animate([
+      { transform: 'translate3d(' + (i/len*100) + 'vw,0,0) scale(' + scale + ')', opacity: scale },
+      { transform: 'translate3d(' + (i/len*100 + 10) + 'vw,100vh,0) scale(' + scale + ')', opacity: 1 }
+    ], {
+      duration: Math.random() * 3000 + 3000,
+      iterations: Infinity,
+      delay: -(Math.random() * 5000)
+    });
+    
+    
+    confettiPlayers.push(player);
+  }
+}
+
+
+
+
+
+
+
+
+
 var cards = [
 {
 rank: "redqueen",
@@ -56,7 +91,12 @@ var cardsRight = [];
 var cardsWrong = [];
 
 var checkForMatch = function() {
-	if (cardsInPlay[0] === cardsInPlay[1] && cardsWrong.length === 0) {
+if (cardsInPlay[0] === cardsInPlay[1] && cardsWrong.length === 0 && cardsRight.length === 6) {
+	cardsRight.push(cardsInPlay[0]);
+	cardsRight.push(cardsInPlay[1]);
+	makeItConfetti();
+	document.querySelector('.yaymsg8').className = 'showmsg';
+} else if (cardsInPlay[0] === cardsInPlay[1] && cardsWrong.length === 0 && cardsRight.length < 6) {
 		cardsRight.push(cardsInPlay[0]);
 		cardsRight.push(cardsInPlay[1]);
 		document.querySelector('.yaymsg'+cardsInPlay.length).className = 'showmsg';
@@ -99,3 +139,6 @@ resetButton.onclick = reloadPage;
 function reloadPage(){
    window.location.reload();
 }
+
+
+

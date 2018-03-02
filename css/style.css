@@ -62,11 +62,15 @@ margin: 35px auto;
 }
 
 img {
-width: 150px;
-height: 220px;
+width: 130px;
+height: 200px;
 border: 2px solid black;
 border-radius: 5px;
-margin: 6px 9px;	
+margin: 8px 9px;	
+}
+
+img:hover {
+border: 2px solid red;    
 }
 
 footer {
@@ -103,6 +107,7 @@ button {
     color: rgba(255,255,255,1);
     width: 400px;
     padding: 30px 20px;
+    border-bottom-right-radius: 25px;
     z-index: 1;
 }
 
@@ -111,13 +116,10 @@ button {
 }
 
 
-.yaymsg {
+.yaymsg2, .yaymsg4, .yaymsg6, .yaymsg8, .naymsg {
     display: none
 }
 
-.naymsg {
-    display: none;
-}
 
 .showmsg {
     color: #FF0000;

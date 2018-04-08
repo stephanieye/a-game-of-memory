@@ -4,6 +4,9 @@
 #A Game of Memory
 -----------------
 
+* [Play game online](http://stephanieye.com/wdi-fundamentals-memorygame/index.html)
+* [View repository on GitHub](https://github.com/stephslye/wdi-fundamentals-memorygame)
+
 This game was created as part of my pre-course work for the General Assembly London Web Development Immersive. We were walked through the process of creating the design and game logic; however, I did add several of my own modifications to complicate the game:
 
 1. The original game involved 4 cards, with 2 matching pairs. I increased the number of cards to 10, with 4 matching pairs and one unmatched pair. In order to increase the number of cards, I had to source for my own card images, which I found at GitHub user hayeah's [playing-cards-assets](https://github.com/hayeah/playing-cards-assets) repository.

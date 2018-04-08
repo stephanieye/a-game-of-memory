@@ -32,4 +32,4 @@ This game was created as part of my pre-course work for the General Assembly Lon
 ##Contact
 ---------
 * hello@stephanieye.com
-* stephanieye.com
+* http://stephanieye.com

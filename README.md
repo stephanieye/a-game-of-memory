@@ -4,8 +4,8 @@
 #A Game of Memory
 -----------------
 
-* [Play game online](http://stephanieye.com/wdi-fundamentals-memorygame/index.html)
-* [View repository on GitHub](https://github.com/stephslye/wdi-fundamentals-memorygame)
+* [Play game online](http://stephanieye.com/a-game-of-memory/index.html)
+* [View repository on GitHub](https://github.com/stephslye/a-game-of-memory)
 
 This game was created as part of my pre-course work for the General Assembly London Web Development Immersive. We were walked through the process of creating the design and game logic; however, I did add several of my own modifications to complicate the game:
 
